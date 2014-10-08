@@ -5,24 +5,43 @@
     <title>Duncan's Just-In-Time Donuts</title>
     <link rel="stylesheet" href="style.css">
     <script src="function.js"></script>
+    <script src="donuts.php"></script>
 
 </head>
 <body>
 
 <div id="frame">
+    <div class="heading">Duncan's Just-In-Time Donuts</div>
+    <div class="subheading">All donuts 50 cents each, cake or glazed!</div>
+    <div id="left">
+        <img src="donuttime.png" alt="Just-In-Time Donuts" />
+    </div>
     <form name="orderform" action="donuts.php" method="POST">
         <div class="field">
-            # of cake donuts: <input type="text" id="cakedonuts" name="cakedonuts"
-                                     value="" onchange="updateOrder();" />
+            Name: <input type="text" id="name" name="name" value="" />
         </div>
         <div class="field">
-            # of glazed donuts: <input type="text" id="glazeddonuts"
-                                       name="glazeddonuts" value="" onchange="updateOrder();" />
+            # of cake donuts: <input type="text" id="cakedonuts" name="cakedonuts" value=""
+                                     onchange="updateOrder();" />
         </div>
-        ...
         <div class="field">
-            <input type="button" value="Place Order"
-                   onclick="placeOrder(this.form);" />
+            # of glazed donuts: <input type="text" id="glazeddonuts" name="glazeddonuts" value=""
+                                       onchange="updateOrder();" />
+        </div>
+        <div class="field">
+            Minutes 'til pickup: <input type="text" id="pickupminutes" name="pickupminutes" value="" />
+        </div>
+        <div class="field">
+            Subtotal: <input type="text" id="subtotal" name="subtotal" value="" readonly="readonly" />
+        </div>
+        <div class="field">
+            Tax: <input type="text" id="tax" name="tax" value="" readonly="readonly" />
+        </div>
+        <div class="field">
+            Total: <input type="text" id="total" name="total" value="" readonly="readonly" />
+        </div>
+        <div class="field">
+            <input type="button" value="Place Order" onclick="placeOrder(this.form);" />
         </div>
     </form>
 </div>

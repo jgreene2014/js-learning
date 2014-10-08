@@ -23,7 +23,20 @@ function updateOrder() {
     document.getElementById("total").value = "$" + total.toFixed(2);
 }//end updateOrder
 
+function parseDonuts(donutString){
+    numDonuts = parseInt(donutString);
+    if (donutString.indexOf("dozen") != -1)
+    numDonuts *=12;
+    return numDonuts;
+}//end parseDonuts
+
 function placeOrder() {
+    if (document.getElementById("name").value == "")
+    alert("I'm sorry, but you must provide your name before submitting an order.");
+    else if (document.getElementById("pickupminutes").value == ""||
+        isNaN(document.getElementById("pickupminutes").value))
+    alert("I'm sorry but you must provide the number of minutes until pick-up before submitting an order.");
+    else
 // Submit order to server...
     form.submit();
 }//end placeOrder
