@@ -1,0 +1,27 @@
+body { font-family: arial, helvetica, sans-serif; font-size: 14px; 
+input[type=email]:valid { background: green }
+input[type=email]:invalid { background: red }
+}
+
+h1 { font-size: 2em; 
+}
+
+h2 {
+    border-style: dashed;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red;
+}
+
+a { text-decoration: none; 
+} 
+
+strong { font-style: italic; text-transform: uppercase; 
+}
+
+p {
+    letter-spacing: 0.5em;
+    word-spacing: 2em;
+    text-align: left;
+}
