@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="path.css">
+    <script src="path.js"></script>
+    <script src="path.php"></script>
+</head>
+
+<body>
+<form name="testform" action="path.php" method="POST">
+    <div class="field">
+        Question 1: <input type="text" id="q1" name="question1" value="" />
+    </div>
+    <div class="field">
+        Question 2: <input type="text" id="q2" name="question2" value=""
+                                 onchange="updateOrder();" />
+    </div>
+    <div class="field">
+        Question 3: <input type="text" id="q3" name="question3" value=""
+                                   onchange="updateOrder();" />
+    </div>
+    <div class="field">
+        Question 4: <input type="text" id="q4" name="question4" value="" />
+    </div>
+    <div class="field">
+        Read-Only Field 1: <input type="text" id="rof1" name="readOnlyField1" value="" readonly="readonly" />
+    </div>
+    <div class="field">
+        Read Only Field 2: <input type="text" id="rof2" name="readOnlyField2" value="" readonly="readonly" />
+    </div>
+    <div class="field">
+        Read Only Field 3: <input type="text" id="rof3" name="readOnlyField3" value="" readonly="readonly" />
+    </div>
+    <div class="field">
+        Button: <input type="button" value="button1" onclick="placeOrder(this.form);" />
+    </div>
+</form>
+
+</body>
+</html>
