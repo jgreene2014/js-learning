@@ -5,13 +5,14 @@
     <title>iRock - The Virtual Pet Rock</title>
     <link rel="stylesheet" href="style.css">
     <script src="functions.js"></script>
+    <script src="cookie.js"></script>
 
 
 </head>
 
-<body onload="alert('Hello, I am your pet rock');">
+<body onload="resizeRock();greetUser();" onresize="resizeRock();">
 <div>
-    <img id="rockImg" src="iRock.jpg" alt="iRock" style="cursor:pointer"
+    <img id="rockImg" src="rock_happy.png" alt="iRock" style="cursor:pointer"
     onclick = touchRock(); />
 </div>
 
