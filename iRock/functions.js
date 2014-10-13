@@ -12,7 +12,7 @@ function greetUser(){
     alert("Hello, " + userName + " I missed you.");
     else
     alert("Hello, I am your pet rock.")
-}
+}//end greetUser
 
 function touchRock(){
     if (userName) {
@@ -28,7 +28,7 @@ function touchRock(){
             alert("Sorry, Cookies are not supported/enabled in your browser.  I won't remember you later.");
     }//end else
         document.getElementById("rockImg").src = "rock_happy.png";
-    setTimeout("document.getElementById('rockImg').src = 'rock_lonley.png';",10000);
+    setTimeout("document.getElementById('rockImg').src = 'rock_lonley.png';",5000);
 }//end touchRock
 
 function resizeRock(){

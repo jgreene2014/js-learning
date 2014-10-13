@@ -26,3 +26,8 @@ else if (document.getElementById("q2").value == ""||
 else
 // Submit order to server...
     form.submit();
+
+//check to see if the browser accepts cookies
+if (navigator.cookieEnabled){
+
+}
