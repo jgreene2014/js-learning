@@ -29,5 +29,47 @@ else
 
 //check to see if the browser accepts cookies
 if (navigator.cookieEnabled){
-
 }
+
+//using switch instead of if and if/else
+switch (curScene) {
+    case 0:
+        curScene = 1;
+        message = "Your journey begins at a fork in the road.";
+        break;
+    case 1:
+        if (decision == 1) {
+            curScene = 2;
+            message = "You have arrived at a cute little house in the woods";
+        }//end if
+        else {
+            curScene = 3;
+            message = "You are standing on the bridge overlooking a peaceful stream";
+        }//end else
+        break;
+    case 2:
+        //code to run
+        break;
+
+//using a for loop to iterate through some number set
+var count = prompt("Enter a number greater than 0.", "10");
+        if (count > 0){
+        for (var x = count; x > 0; x--)
+            alert("Starting in .." + x);
+            alert("Roll film!");
+        }//end if
+        else
+        alert("The number wasn't greater than 0, No movied for you!");
+
+//using a while loop to iterate through some number set
+var count = prompt("Enter a number greater than 0.", "10");
+        if (count > 0){
+            var x = count;
+            while (x > 0 ){
+                alert("Starting in .." + x);
+                x ++;
+            }//end while
+            alert("Roll film!");
+        }//end if
+        else
+            alert("The number wasn't greater than 0, No movied for you!");
