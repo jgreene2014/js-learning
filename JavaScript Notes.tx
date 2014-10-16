@@ -108,3 +108,13 @@ The onblur event is fired when the input focus leaves a form field, and is a gre
 Alert boxes are a very clunky and often annoying way of notifying users of data validation problems.
 A passive approach to validation help is much more intuitive and less of a hassle for users.
 The length property of a string reveals the number of characters in the string.
+
+A regular expression matches a pattern of text in a string, and is enclosed within forward slashes.
+In addition to normal text, regular expressions are built out of metacharacters and quantifiers, which provide careful control over how a text pattern is matched.
+In JavaScript, regular expressions are supported by the built-in RegExp object, but it is rarely seen because regular expressions are typically created as literals.
+The test() method in the RegExp object is used to a test a regular expression pattern on a string of text.
+
+Reg Expressions
+Standard date (MM/DD/YYYY) - /^\d{2}\/\d{2}\/(\d{2}|\d{4})$/
+Phone Number (XXX-XXX-XXXX) - /^\d{3}\-\d{3}\-\d{4}$/
+Email Address (abc123@example.com) - /^[\w\.-_\+]+@[\w-]+(\.\w{2,3})+$/

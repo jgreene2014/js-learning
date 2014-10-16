@@ -23,13 +23,13 @@
     <div class="field">
         Enter ZIP code of the location:
         <input id="zipcode" name="zipcode" type="text" size="5"
-               onblur="validateNonEmpty(this, document.getElementById('zipcode_help'))" />
+               onblur="validateZIPCode(this, document.getElementById('zipcode_help'))" />
         <span id="zipcode_help" class="help"></span>
     </div>
     <div class="field">
         Enter the date for the message to be shown:
         <input id="date" name="date" type="text" size="10"
-               onblur="validateNonEmpty(this, document.getElementById('date_help'))" />
+               onblur="validateDate(this, document.getElementById('date_help'))" />
         <span id="date_help" class="help"></span>
     </div>
     <div class="field">
@@ -41,13 +41,13 @@
     <div class="field">
         Enter your phone number:
         <input id="phone" name="phone" type="text" size="12"
-               onblur="validateNonEmpty(this, document.getElementById('phone_help'))" />
+               onblur="validatePhoneNumber(this, document.getElementById('phone_help'))" />
         <span id="phone_help" class="help"></span>
     </div>
     <div class="field">
         Enter your email address:
         <input id="email" name="email" type="text" size="32"
-               onblur="validateNonEmpty(this, document.getElementById('email_help'))" />
+               onblur="validateEmailAddress(this, document.getElementById('email_help'))" />
         <span id="email_help" class="help"></span>
     </div>
     <input type="button" value="Order Banner" onclick="placeOrder(this.form);" />
