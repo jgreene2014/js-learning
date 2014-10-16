@@ -1,0 +1,110 @@
+The Interactive Web
+===================
+Events are used to respond to web page happenings with JavaScript code.
+The onload event is triggered when a page finishes loading.
+You respond to the onload event by setting the onload attribute of the <body> tag.
+Functions allow you to bundle JavaScript code into reusable modules.
+Some functions require you to pass them information to complete their task.
+The alert() function is a built‑in JavaScript function that displays a text message in a small pop‑up window.
+
+Storing Data
+=============
+Script data can usually be represented by one of the three basic data types: text, number, or boolean.
+A variable is a piece of data that can change over the course of a script.
+A constant is a piece of information that cannot change.
+The var keyword is used to create variables, while const is used to create constants.
+The data type of a piece of JavaScript data is established when you set the data to a certain value, and for variables the type can change.
+
+Although not a strict JavaScript requirement, it’s a good coding convention to name constants in ALL UPPERCASE and variables in lowerCamelCase.
+Always initialize constants when you create them, and initialize variables whenever possible.
+When a variable isn’t initialized, it remains undefined until a value is eventually assigned to it.
+NaN stands for Not a Number, and is used to indicate that a piece of data is not a number when the expectation is that it should be.
+String concatenation is very different from mathematical addition, even though both use the familiar plus sign (+).
+The built-in parseInt() and parseFloat() functions are used to convert strings to numbers.
+
+Exploring the Client
+=====================
+The setTimeout() function allows you to create a one-shot timer that triggers JavaScript code after a period of time has elapsed.
+To set a timer that repeats at a certain interval, use setInterval(), which will create an interval timer.
+Always specify timer durations in milliseconds, which are thousandths of a second.
+Web page elements have a style object you use to set style properties, such as width and height.
+The client window is the part of the browser window that displays the web page and nothing else.
+You can access the width and height of the client window using the body.clientWidth and body.clientHeight properties of the document object.
+
+A cookie is a piece of text data stored by the browser on the user’s computer.
+Cookies allow scripts to store data that survives beyond a single web session.
+Every cookie has an expiration date, after which the cookie is destroyed by the browser.
+Moving script code to an external file is a handy way to make the code more reusable and maintainable.
+Cookies can’t access a user’s hard disk or spread viruses, but they are capable of storing personal data that has been entered in web pages.
+
+Decision Making
+===============
+Use the if statement to conditionally run a single piece of JavaScript code.
+The test condition in an if statement must always result in true or false.
+Use the if/else statement to conditionally run one of two different pieces of JavaScript code.
+Use a compound statement to run multiple pieces of JavaScript code in place of a single piece of code.
+Create a compound statement by surrounding multiple individual statements with curly braces ({}).
+Compound statements allow the action parts of if and if/else statements to do more than one thing.
+
+Comments are a great way to remind yourself of code to add later.
+Don’t be afraid to use lots of comments to document your code so that it’s easier to understand.
+Use a pair of forward slashes (//) to start a single-line comment.
+Multiline comments start with /* and end with */.
+Global variables are created at the script level, outside of any function or other body of code, and are kept around for the life of the script.
+Local variables are created (and destroyed) inside a body of code, and can only be accessed within that code.
+Local variables are preferred over global variables because their access is more tightly controlled.
+
+Looping
+=======
+for loops repeat a piece of JavaScript code a specific number of times.
+The increment (++) and decrement (-- ) operators provide a handy way to update loop counters.
+An array allows you to store multiple pieces of data in a single place.
+Although an array holds multiple pieces of information, it has a single variable name.
+Indexed arrays are accessed using numeric keys called indexes.
+Indexed arrays work great with loops because they allow you to use a loop counter to loop through array data.
+
+The break statement immediately breaks out of a loop, skipping any remaining loop code.
+Boolean logic operators allow you to create powerful true/false logic for making decisions.
+The while loop runs a piece of code as long as a certain test condition remains true.
+Avoid an infinite loop by making sure the test condition is somehow affected by code within the while loop.
+
+Two-dimensional arrays allow you to store rows and columns of data in tabular structures.
+When accessing an individual piece of data in a 2-D array, you must specify both the row and column of the index.
+Nested loops can be used to iterate through the data in a 2-D array.
+Just like normal arrays, 2-D arrays can be created and initialized from array object literals
+
+Functions
+=========
+Functions allow you to turn big problems into small problems, which become much easier to solve.
+Functions provide a mechanism to separate script tasks and then complete them with reusable chunks of code.
+Functions serve as a great way to eliminate duplicate code since the code in a function can be reused as many times as you want.
+Arguments allow you to pass data into functions as input for a given task.
+
+The return statement allows functions to return data back to the code that called them.
+When a piece of data is returned from a function, it stands in for the code that called the function.
+A function can only return a single piece of data.
+The return statement can be used without any data to simply end a function early.
+
+Callback functions are called by the browser in response to things that take place outside of the script.
+Function references can be used to assign functions as if they were variables.
+Function references let you wire event handler functions in JavaScript code without altering HTML code.
+Function literals are nameless functions that are handy in situations when a named function isn’t necessary.
+
+Forms and Validation
+====================
+
+(onfocus) - The onfocus event is fired when a field first gets selected for input.
+(onblur)- The onblur event is fired when a field loses input selection.
+(onchange) - The onchange event is similar to onblur except that it only gets triggered if the field
+loses input selection and its contents have been changed.
+
+<input id="phone" name="phone" type="text" size="12"
+onblur="validateNonEmpty(this, document.getElementById('phone_help'));" />
+<span id="phone_help" class="help"></span>
+
+Every form field is accessible as a JavaScript object.
+Within a form field object there is a property called form that represents the entire form as an array of fields.
+The onblur event is fired when the input focus leaves a form field, and is a great way to trigger a data validation function.
+Alert boxes are a very clunky and often annoying way of notifying users of data validation problems.
+A passive approach to validation help is much more intuitive and less of a hassle for users.
+The length property of a string reveals the number of characters in the string.
