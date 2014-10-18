@@ -118,3 +118,10 @@ Reg Expressions
 Standard date (MM/DD/YYYY) - /^\d{2}\/\d{2}\/(\d{2}|\d{4})$/
 Phone Number (XXX-XXX-XXXX) - /^\d{3}\-\d{3}\-\d{4}$/
 Email Address (abc123@example.com) - /^[\w\.-_\+]+@[\w-]+(\.\w{2,3})+$/
+
+Wrangling the Page (Document Object Model - DOM)
+================================================
+
+Using getElementById(): document.getElementById(“orange“)
+Using getElementsByTagName(): document.getElementsByTagName(“img“)[3]
+

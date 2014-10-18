@@ -151,8 +151,15 @@ function changeSceneUsingSwitch (decision){
             //to be continued
             break;
     }
-
+    // update the scene image
     document.getElementById("sceneImg").src = "scene" + curScene + ".png";
-    if (message != "")
+    /*if (message != "")
         alert(message);
+    */
+
+    //update the scene description text
+    var sceneText = document.getElementById("sceneText");
+    while (sceneText.firstChild)
+    sceneText.removeChild(sceneText.firstChild);
+    sceneText.appendChild(document.createTextNode(message));
 }//end changeScene
