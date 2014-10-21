@@ -1,2 +1,16 @@
 div {margin-top: 100px;
     text-align:center}
+
+span.decision {
+    font-weight: bold;
+    border: thin solid #000000;
+    padding: 5px;
+    background-color: #DDDDDD;
+}
+
+span.decisionhover {
+    font-weight: bold;
+    border: thin solid #DDDDDD;
+    padding: 5px;
+    background-color: #EEEEEE;
+}

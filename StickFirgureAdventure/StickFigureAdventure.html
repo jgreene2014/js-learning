@@ -14,13 +14,23 @@
 <div id="scene">
     <img id="sceneImg" src="scene0.png" alt="Stick Figure Adventure"><br>
     <div id="sceneText"></div><br />
-    Please Choose:
+    <span id="decision1" class="decision" onclick="changeSceneUsingSwitch(1)"
+            onmouseover="this.className = 'decisionhover'"
+            onmouseout="this.className = 'decision'">Start Game</span>
+    <span id="decision2" class="decision" onclick="changeSceneUsingSwitch(2)"
+          onmouseover="this.className = 'decisionhover'"
+          onmouseout="this.className = 'decision'"></span>
+
 <!--
-<input type="button" id="decision1" value="1" onclick="changeScene(1)">
-    <input type="button" id="decision2" value="2" onclick="changeScene(2)">
+        Please Choose:
+
+    <input type="button" id="decision1" value="1" onclick="changeScene(1)">
+        <input type="button" id="decision2" value="2" onclick="changeScene(2)">
 -->
+<!--
     <input type="button" id="decision1" value="1" onclick="changeSceneUsingSwitch(1)">
     <input type="button" id="decision2" value="2" onclick="changeSceneUsingSwitch(2)">
+-->
 </div>
 
 </body>

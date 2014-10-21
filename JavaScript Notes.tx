@@ -125,3 +125,8 @@ Wrangling the Page (Document Object Model - DOM)
 Using getElementById(): document.getElementById(“orange“)
 Using getElementsByTagName(): document.getElementsByTagName(“img“)[3]
 
+Although not a web standard, the innerHTML property provides access to all of the content stored in an element.
+The Document Object Model, or DOM, provides a standardized mechanism of accessing and modifying web page data.
+The DOM looks at a web page like a hierarchical tree of related nodes.
+The DOM alternative to changing web page content with innerHTML involves removing all of the child nodes of an element, and then creating and appending a new child node that contains the new content.
+
