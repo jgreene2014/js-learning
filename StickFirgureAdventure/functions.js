@@ -100,6 +100,9 @@ function changeSceneUsingSwitch (decision){
             message = "Your journey begins at a fork in the road.";
             decision1 = "Take the Path";
             decision2 = "Take the Bridge";
+
+            //show the second decision
+            document.getElementById("decision2").style.visibility = "visible";
             break;
         case 1:
             if (decision == 1) {
@@ -128,6 +131,9 @@ function changeSceneUsingSwitch (decision){
                 message = "Sorry, a witch lines in the house and you just became part of her stew";
                 decision1 = "Start Over";
                 decision2 = "";
+
+                //hide the second decision
+                document.getElementById("decision2").style.visibility = "hidden";
             }//end else
             break;
         case 3:
@@ -136,6 +142,9 @@ function changeSceneUsingSwitch (decision){
                 message = "Sorry, a troll lives on the other side of the bridge and you just became his lunch.";
                 decision1 = "Start Over";
                 decision2 = "";
+
+                //hide the second decision
+                document.getElementById("decision2").style.visibility = "hidden";
             }
             else {
                 curScene = 7;
@@ -155,6 +164,9 @@ function changeSceneUsingSwitch (decision){
                 message = "Sorry, you became part of the witch's stew.";
                 decision1 = "Start Over";
                 decision2 = "";
+
+                //hide the second decision
+                document.getElementById("decision2").style.visibility = "hidden";
             }//end else
             break;
         case 5:
@@ -173,6 +185,9 @@ function changeSceneUsingSwitch (decision){
                 message = "Sorry, you became the troll's tasty lunch.";
                 decision1 = "Start Over";
                 decision2 = "";
+
+                //hide the second decision
+                document.getElementById("decision2").style.visibility = "hidden";
             }
             else {
                 curScene = 9;
@@ -203,4 +218,17 @@ function changeSceneUsingSwitch (decision){
     replaceNodeText("sceneText", message);
     replaceNodeText("decision1", decision1);
     replaceNodeText("decision2", decision2);
-}//end changeScene
+
+    //update the decision history
+    var history = document.getElementById("history");
+    if (curScene != 0){
+        var decisionElem = document.createElement("p");
+        decisionElem.appendChild(document.createTextNode("Decision " + decision + " -> Scene " + curScene + " : " + message));
+        history.appendChild(decisionElem);
+    }//end if
+    else {
+    //clear the decision history
+        while (history.firstChild)
+        history.removeChild(history.firstChild);
+    }//end else
+}//end changeSceneUsingSwitch
