@@ -146,3 +146,21 @@ Objects are a special kind of data structure that combine data with code that ac
 In practical terms, an object is really just variables and functions combined into a single structure.
 When placed into an object, variables become known as properties, while functions become known as methods.
 Properties and methods are referenced by supplying the name of the object followed by a dot followed by the name of the property or method.
+
+The standard JavaScript Date objects represents an instant in time, expressed in milliseconds.
+The Date object includes several methods for accessing the different pieces and parts of a date and time.
+The Date object is smart enough to know how to manipulate dates mathematically, as well as compare dates to each other.
+Like most objects other than String, you create a Date object using the new operator.
+
+The toString() method is used to convert any object to a text representation.
+Arrays and strings are both really just objects, relying on the standard Array and String objects in JavaScript for their methods and data storage.
+The sort() method of the Array object can be used to sort an array in any order you want.
+The indexOf() method in the String object searches for a string of text within another string, returning the index of the search string location.
+
+Creating Custom Objects (objects)
+=================================
+
+A class is a description of an object, while an instance is an actual object that has been created based upon that description.
+A class lays out the properties and methods of an object, while an instance places real data in the properties, giving the methods something to work with.
+The this keyword is used to access an instance from within its own code.
+The prototype object allows methods to be stored in a class, preventing instances from unnecessarily duplicating code.

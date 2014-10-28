@@ -73,3 +73,30 @@ var count = prompt("Enter a number greater than 0.", "10");
         }//end if
         else
             alert("The number wasn't greater than 0, No movied for you!");
+
+ //get days between two dates
+    function getDaysBetween(date1, date2) {
+        var daysBetween = (date2 - date1) / (1000 * 60 * 60 * 24);
+        return Math.round(daysBetween);
+
+ //create two date objects and write a simple return for getting the number of days between them
+        var blogDate1 = new Date("08/14/2008");
+        var blogDate2 = new Date("08/19/2008");
+        alert("The dates are separated by " + getDaysBetween(blogDate1, blogDate2) + " days.");
+
+  //get some text from a text box, and search through and array of values
+        function searchBlog(){
+            var searchText = document.getElementById("searchtext").value;
+            for (var i = 0; i < blog.length; i++){
+                //see if the blog entry contains the search text
+                if (blog[i].body.toLowerCase().indexOf(searchText.toLowerCase()) != -1){
+                    alert("[" + (blog[i].date.getMonth() + 1) + "/" + + blog[i].date.getDate() + "/" + blog[i].date.getFullYear()
+                    + "]" + blog[i].body);
+                    break;
+                }//end if
+            }//end for
+
+            //If the search text was not found, display a message
+            if (i == blog.length)
+                alert("Sorry, there are no blog entries containing the search text.")
+        }//end searchBlog
