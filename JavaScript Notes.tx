@@ -164,3 +164,11 @@ A class is a description of an object, while an instance is an actual object tha
 A class lays out the properties and methods of an object, while an instance places real data in the properties, giving the methods something to work with.
 The this keyword is used to access an instance from within its own code.
 The prototype object allows methods to be stored in a class, preventing instances from unnecessarily duplicating code.
+
+Kill Bugs Dead (Debugging)
+==========================
+
+Although most browsers provide an error console that provides information about JavaScript errors, they can’t always be trusted as completely accurate.
+Even though browsers often yield sketchy error information, they do usually provide valuable clues about where to start looking for trouble.
+Curly braces around blocks of code are a common source of bugs—be careful to always match opening and closing braces.
+Simple typographical errors are easy to make but not necessarily easy to find—always check the naming of identifiers.
