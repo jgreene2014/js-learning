@@ -67,3 +67,4 @@ AjaxRequest.prototype.getResponseText = function() {
 AjaxRequest.prototype.getResponseXML = function() {
   return this.request.responseXML;
 }
+

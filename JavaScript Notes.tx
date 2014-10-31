@@ -187,3 +187,11 @@ Use escape characters to code characters that have a special meaning in strings,
 Never, ever, ever use = when you mean ==. JavaScript probably won’t see it as an error but your code will not work as intended.
 Make sure an object has been created before attempting to access it—this primarily applies to web page elements, which aren’t created until just before the onload event is triggered.
 Don’t ever name local variables and global variables the same thing because the local variable will shadow the global one, resulting in some very unpredictable behavior.
+
+Dynamic Data (AJAX and XML)
+===========================
+
+The XMLHttpRequest object is the standard object for carrying out Ajax requests but it can be somewhat messy to use.
+The custom AjaxRequest object serves as a convenient way to use Ajax without having to deal directly with XMLHttpRequest.
+Ajax requests always fall into one of two types, GET or POST, which is determined by the data being sent to the server, as well as how the data affects the server.
+The send() method of the AjaxRequest object
