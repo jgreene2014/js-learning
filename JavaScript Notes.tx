@@ -172,3 +172,18 @@ Although most browsers provide an error console that provides information about 
 Even though browsers often yield sketchy error information, they do usually provide valuable clues about where to start looking for trouble.
 Curly braces around blocks of code are a common source of bugs—be careful to always match opening and closing braces.
 Simple typographical errors are easy to make but not necessarily easy to find—always check the naming of identifiers.
+
+Syntax errors involve code that violates JavaScript language rules, and are usually caught by the JavaScript interpreter.
+Strings must be carefully enclosed within matching quotes or apostrophes.
+Quotes and apostrophes should be mixed (but still in matching pairs) in HTML event handler attributes that contain JavaScript code.
+Alert boxes offer a primitive but useful option for watching variables throughout a script.
+It’s a common error to accidentally code a test condition with = when you really mean ==.
+
+Make sure parentheses are always matched in pairs.
+Make sure curly braces around blocks of code are always matched in pairs - careful indentation of code helps in matching pairs of curly braces.
+Try hard to avoid typos in identifier names—both variables and functions can cause big problems if their names aren’t used consistently.
+Be consistent with the use of quotes and apostrophes, and carefully mix the two in HTML attributes if necessary.
+Use escape characters to code characters that have a special meaning in strings, such as a quote (\”) or an apostrophe (\’).
+Never, ever, ever use = when you mean ==. JavaScript probably won’t see it as an error but your code will not work as intended.
+Make sure an object has been created before attempting to access it—this primarily applies to web page elements, which aren’t created until just before the onload event is triggered.
+Don’t ever name local variables and global variables the same thing because the local variable will shadow the global one, resulting in some very unpredictable behavior.

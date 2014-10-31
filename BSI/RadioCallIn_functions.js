@@ -2,12 +2,17 @@
  * Created by jsg665 on 10/30/2014.
  */
 
+//Debug console global variable
+    var console = new DebugConsole();
+
 // Total number of calls
 var callNum = 0;
 
 function checkWinner(form, caller, winningNum) {
     // Increment the call number
     callNum++;
+
+    console.displayMsg("CallNum:" + callNum);
 
     // Check for a winner
     if (callNum == winningNum) {
