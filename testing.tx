@@ -1,0 +1,20 @@
+Throughout this book, we’ll be applying a number of testing techniques that serve to ensure that our example code
+operates as intended, as well as to serve as examples of how to test general code. The primary tool that we’ll be using
+for testing is an assert() function, whose purpose is to assert that a premise is either true or false. The general
+form of this function is:
+
+assert(condition, message);
+
+where the first parameter is a condition that should be true, and the second is a message that will be displayed if it’s
+not. Consider this, for example:
+
+assert(a == 1, "Disaster! a is not 1!");
+
+If the value of variable a isn’t equal to 1, the assertion fails, and the somewhat overly dramatic message is displayed.
+Note that the assert() function isn’t an innate feature of the language (some languages, such as Java, provide such
+capabilities), so we’ll be implementing it ourselves.
+
+Test Generation
+===============
+
+Repeatability, Simplicity, Independence

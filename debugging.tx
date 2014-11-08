@@ -1,0 +1,16 @@
+Browser based tools
+===================
+
+Firebug—The popular developer extension for Firefox that got the ball rolling. See http://getfirebug.org/.
+IE Developer Tools—Included in Internet Explorer 8 and later.
+Opera Dragonfly—Included in Opera 9.5 and newer. Also works with mobile versions of Opera.
+WebKit Developer Tools—Introduced in Safari 3, dramatically improved as of Safari 4, and now available in Chrome.
+
+Logging
+=======
+
+console.log() method allows logging to the system without interrupting normal browser operations.
+
+Breakpoints
+===========
+

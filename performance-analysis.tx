@@ -1,0 +1,19 @@
+Another important practice is performance analysis. The JavaScript engines in the browsers have been making astounding
+strides in the performance of JavaScript itself, but that’s no excuse for us to write sloppy and inefficient code. We’ll
+be using code such as the following later in this book for collecting performance information:
+
+start = new Date().getTime();
+for (var n = 0; n < maxCount; n++) {
+/* perform the operation to be measured *//
+}
+elapsed = new Date().getTime() - start;
+assert(true,"Measured time: " + elapsed);
+
+Here, we bracket the execution of the code to be measured with the collection of timestamps: one before we execute the
+code and one after. Their difference tells us how long the code took to perform, which we can compare against
+alternatives to the code that we measure using the same technique.
+
+Note how we perform the code multiple times; in this example, we perform it the number of times represented by maxCount.
+Because a single operation of the code happens much too quickly to measure reliably, we need to perform the code many
+times to get a measurable value. Frequently, this count can be in the tens of thousands, or even millions, depending
+upon the nature of the code being measured. A little trial and-error lets us choose a reasonable value.
